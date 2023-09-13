@@ -1,0 +1,52 @@
+h1{
+    color:oldlace
+}
+
+#wrapper {
+    width: 800px;
+    margin: 0 auto;
+}
+
+#banner {
+    width: 800px;
+    height: 200px;
+    background-color: olive;
+    clear: both;
+}
+#nav {
+    width: 200px;
+    background-color: #899D78;
+    color: oldlace;
+    float: left;
+}
+/* unvisited link */
+a:link {
+    color: oldlace;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: lightsalmon;
+    font-weight: 800;
+  }
+  
+  /* selected link */
+  a:active {
+    color: lightsalmon;
+  }
+#content {
+    width: 400px;
+    background-color: #6B654B;
+    float: left;
+}
+#info {
+    width: 200px;
+    background-color: #989572;
+    float: left;
+}
+#footer {
+    width: 800px;
+    height: 100px;
+    background-color: goldenrod;
+    clear: both;
+}
