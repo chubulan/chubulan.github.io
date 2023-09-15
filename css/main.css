@@ -1,3 +1,8 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
 h1{
     color:oldlace
 }
@@ -7,46 +12,66 @@ h1{
     margin: 0 auto;
 }
 
+#content, #nav, #info {
+    margin-top: 100px;
+}
+
+
 #banner {
     width: 800px;
-    height: 200px;
+    height: 100px;
     background-color: olive;
     clear: both;
+    position: fixed;
 }
+
 #nav {
-    width: 200px;
+    width: 80px;
+    height: 200px;
     background-color: #899D78;
     color: oldlace;
     float: left;
+    text-align: center;
+    padding: 20px;
 }
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
 /* unvisited link */
 a:link {
     color: oldlace;
   }
   
-  /* mouse over link */
+/* mouse over link */
   a:hover {
     color: lightsalmon;
     font-weight: 800;
   }
   
-  /* selected link */
+/* selected link */
   a:active {
     color: lightsalmon;
   }
 #content {
-    width: 400px;
+    width: 540px;
+    height: 400px;
     background-color: #6B654B;
     float: left;
+    padding-left: 20px;
 }
 #info {
-    width: 200px;
+    width: 100px;
+    height: 150px;
     background-color: #989572;
     float: left;
+    padding-left: 20px;
 }
 #footer {
     width: 800px;
-    height: 100px;
+    height: 50px;
     background-color: goldenrod;
+    float: left;
     clear: both;
 }
