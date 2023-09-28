@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap Webpage Example</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom Styles */
+        .website-banner {
+            color: black;
+            margin-bottom: 20px;
+            padding: 8% 0; /* Increased padding to make the banner taller */
+        }
+
+        .section-banner {
+            height: 100vh;
+            background-color: #FF6F61;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 5% 0;
+            text-align: center;
+            border: none;
+        }
+
+        .section-content {
+            padding: 2rem 0;
+            min-height: 200vh;
+        }
+
+        .content-box {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            border-radius: 10px;
+        }
+
+        .jumbotron-fluid {
+            border-radius: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Website Banner -->
+    <div class="jumbotron jumbotron-fluid text-center bg-info website-banner p-4 mb-0">
+        <div class="container-fluid">
+            <h1>這裡是Banner</h1>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#">首頁</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#section1">區段1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section2">區段2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section3">區段3</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Section 1 -->
+    <section id="section1" class="section-banner py-5">
+        <h2>區段1 Banner</h2>
+    </section>
+    <section class="section-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 content-box">
+                    <h3>區段1內容</h3>
+                    <p>這是區段1的內容</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in libero nec dolor luctus bibendum.</p>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section id="section2" class="section-banner py-5">
+        <h2>區段2 Banner</h2>
+    </section>
+    <section class="section-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 content-box">
+                    <h3>區段2內容</h3>
+                    <p>這是區段2的內容</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in libero nec dolor luctus bibendum.</p>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section id="section3" class="section-banner py-5">
+        <h2>區段3 Banner</h2>
+    </section>
+    <section class="section-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 content-box">
+                    <h3>區段3內容</h3>
+                    <p>這是區段3的內容</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in libero nec dolor luctus bibendum.</p>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Smooth Scrolling Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var links = document.querySelectorAll('a');
+
+            links.forEach(function(anchor) {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start',
+                        inline: 'nearest',
+                        duration: 2000 // Adjust this value for slower scrolling
+                    });
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
