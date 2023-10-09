@@ -1,0 +1,227 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family:'Roboto','Hiragino Sans';
+}
+
+.container_1 {
+    position: relative;
+    height: 100vh;
+    background-image: url('juju/stars_1.jpeg');
+    background-size:cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .9;
+}
+
+.text-container {
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 2s ease;
+}
+
+.text-container.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.banner-text {
+    color: #fff;
+}
+
+#first {
+    background-image: url('juju/gojo_eyes_bw.jpeg');
+    min-height: 800px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#second {
+    background-image: url("juju/gojo_eyes_color.jpeg");
+    min-height: 800px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.container_2 {
+    position: relative;
+    height: 400vh;
+    overflow: hidden;
+}
+
+.bg-image {
+    background-image: url('juju/kyousitu.png'); 
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .2;
+    z-index: -1;
+}
+
+.front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.row {
+    margin: 20px;
+    align-items: center;
+}
+
+.space {
+    height: 80vh;
+    width: auto;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.onerow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 64vh;
+    padding-bottom: 64vh;
+    position: relative;
+}
+
+.onerow h1 {
+    color: #000; /* Initial text color */
+}
+
+.onerow.darken {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.onerow.darken h1 {
+    color: #fff; /* Text color after darken */
+    transition: color 0.4s ease; /* Easing for text color change */
+}
+ 
+.container_3 {
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sad-container {
+    text-align: center;
+    opacity: 0;
+    padding: 148px;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 2s ease;
+}
+
+.sad-container.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.sad-words {
+    color: #fff;
+}
+
+.bg-image-1 {
+    background-image: url('juju/memories.png'); 
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+    z-index: -1;
+}
+
+.shade {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+.container_4 {
+    position: relative;
+    height: 400vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg-image-2 {
+    background-image: url(juju/people_1.png);
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .2;
+    z-index: -1;
+}
+
+.geto_leave {
+    position: relative;
+    border-color: #000;
+    border-width: 2px;
+    border-style: solid;
+    margin-top: 24vh;
+    margin-bottom: 24vh;
+}
+
+.container_5 {
+    position: relative;
+    height: 160vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-image-3 {
+    background-image: url(juju/noise.png);
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.footer {
+    position: relative;
+    height: 100vh;
+    background: black;
+}
