@@ -48,6 +48,7 @@ body {
     height: 36vh;
     text-align: left;
     padding: 8vh;
+    background-color: antiquewhite;
 }
 h3 {
     font-style:italic;
@@ -108,10 +109,10 @@ p {
     flex-direction: row;
     justify-content:space-between;
     padding-bottom: 16vh;
-    text-align: left;
+    align-items: left;
 }
 .r img{
-    margin-right: 8vw; 
+    margin-right: 40px; 
 }
 
 .shoutout {
